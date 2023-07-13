@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6699C1242A601617007FBF3B /* SetupPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6699C1232A601617007FBF3B /* SetupPasswordViewModel.swift */; };
+		6699C1282A601B24007FBF3B /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6699C1272A601B24007FBF3B /* ViewModifiers.swift */; };
 		66DC64712A5F3831009D593F /* iPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC64702A5F3831009D593F /* iPasswordApp.swift */; };
-		66DC64732A5F3831009D593F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC64722A5F3831009D593F /* ContentView.swift */; };
+		66DC64732A5F3831009D593F /* SetupPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC64722A5F3831009D593F /* SetupPasswordView.swift */; };
 		66DC64752A5F3832009D593F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DC64742A5F3832009D593F /* Assets.xcassets */; };
 		66DC64782A5F3832009D593F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DC64772A5F3832009D593F /* Preview Assets.xcassets */; };
+		66DC647F2A5F3863009D593F /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC647E2A5F3863009D593F /* Password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6699C1232A601617007FBF3B /* SetupPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPasswordViewModel.swift; sourceTree = "<group>"; };
+		6699C1272A601B24007FBF3B /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		66DC646D2A5F3831009D593F /* iPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DC64702A5F3831009D593F /* iPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPasswordApp.swift; sourceTree = "<group>"; };
-		66DC64722A5F3831009D593F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66DC64722A5F3831009D593F /* SetupPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPasswordView.swift; sourceTree = "<group>"; };
 		66DC64742A5F3832009D593F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66DC64772A5F3832009D593F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66DC647E2A5F3863009D593F /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6699C1252A601AD8007FBF3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6699C1232A601617007FBF3B /* SetupPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6699C1262A601AE5007FBF3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66DC64722A5F3831009D593F /* SetupPasswordView.swift */,
+				6699C1272A601B24007FBF3B /* ViewModifiers.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		66DC64642A5F3831009D593F = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				66DC64702A5F3831009D593F /* iPasswordApp.swift */,
-				66DC64722A5F3831009D593F /* ContentView.swift */,
+				66DC64802A5F3867009D593F /* Models */,
+				6699C1262A601AE5007FBF3B /* View */,
+				6699C1252A601AD8007FBF3B /* ViewModel */,
 				66DC64742A5F3832009D593F /* Assets.xcassets */,
 				66DC64762A5F3832009D593F /* Preview Content */,
 			);
@@ -65,6 +90,14 @@
 				66DC64772A5F3832009D593F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66DC64802A5F3867009D593F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66DC647E2A5F3863009D593F /* Password.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66DC64732A5F3831009D593F /* ContentView.swift in Sources */,
+				6699C1282A601B24007FBF3B /* ViewModifiers.swift in Sources */,
+				66DC647F2A5F3863009D593F /* Password.swift in Sources */,
+				66DC64732A5F3831009D593F /* SetupPasswordView.swift in Sources */,
 				66DC64712A5F3831009D593F /* iPasswordApp.swift in Sources */,
+				6699C1242A601617007FBF3B /* SetupPasswordViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +308,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,9 +317,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.iPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,8 +339,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,9 +348,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.iPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
